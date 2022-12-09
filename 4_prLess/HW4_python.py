@@ -21,11 +21,11 @@
 # print(accuracy(input("num = "), input("d = ")))
 
 
-from decimal import Decimal
+# from decimal import Decimal
 
-num = Decimal(input("n = "))
-num = num.quantize(Decimal("0.001"))
-print(num)
+# num = Decimal(input("n = "))
+# num = num.quantize(Decimal("0.001"))
+# print(num)
 
 
 # 2. Задайте натуральное число N. Напишите программу, которая составит список простых множителей 
@@ -69,21 +69,21 @@ print(num)
 # [4, 4, 5, 5, 6, 2, 3, 0, 9, 4]
 # [6, 2, 3, 0, 9]
 
-# from random import choices
+from random import choices
 
-# def CreateRandomList(n):
-#     if n < 0:
-#         print("Negative value of the number of numbers!")
-#     else: 
-#         list_1 = choices(range(1, n), k=n)
-#         print(list_1)
-#         temp = []
-#         for i in list_1:
-#             if list_1.count(i) == 1:
-#                 temp.append(list_1[i])       #выдает ошибку. Почему не знаю. Можете подсказать? 
-#         print(temp)
+def CreateRandomList(n):
+    if n < 0:
+        print("Negative value of the number of numbers!")
+    else: 
+        list_1 = choices(range(1, n), k=n)
+        print(list_1)
+        temp = []
+        for i in list_1:
+            if list_1.count(i) == 1:
+                temp.append(list_1[i])       #выдает ошибку. Почему не знаю. Можете подсказать? 
+        print(temp)
 
-# print(CreateRandomList(int(input("n: "))))
+print(CreateRandomList(int(input("n: "))))
 
 # При решении задачи 3 логика была сл.:
 # Создаю список при помощи choices далее делаю проверку на количество вхождений i-го элемета 
