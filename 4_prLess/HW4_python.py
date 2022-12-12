@@ -80,10 +80,10 @@ def CreateRandomList(n):
         temp = []
         for i in list_1:
             if list_1.count(i) == 1:
-                temp.append(list_1[i])       #выдает ошибку. Почему не знаю. Можете подсказать? 
+                temp.append(i)       #выдает ошибку. Почему не знаю. Можете подсказать? 
         print(temp)
 
-print(CreateRandomList(int(input("n: "))))
+print(CreateRandomList(int(input("n = "))))
 
 # При решении задачи 3 логика была сл.:
 # Создаю список при помощи choices далее делаю проверку на количество вхождений i-го элемета 
